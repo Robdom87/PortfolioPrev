@@ -1,3 +1,17 @@
-header {
-    display: inline;
+header{
+    background-color: aqua;
+    border: 5px solid aqua;
+}
+
+
+header h1{
+    display: inline-block;
+}
+
+header nav{
+    display: inline-block;
+}
+
+header nav ul li{
+    display: inline-block;
 }
