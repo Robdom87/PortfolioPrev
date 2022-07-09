@@ -1,17 +1,42 @@
+/* Styling for the first banner with navigation links. */
 header{
-    background-color: aqua;
-    border: 5px solid aqua;
+    background-color: navy;
+    border: 5px solid navy;
+    padding: 25px;
 }
-
 
 header h1{
     display: inline-block;
+    font-size: 24px; 
+    font-family: serif;
+    color: white;
 }
 
 header nav{
     display: inline-block;
+    float: right;
+    font-size: 16px;
+    font-family: serif;
+    color:white;
 }
 
 header nav ul li{
     display: inline-block;
+    margin: 5px;
+    color: white;
+}
+
+header nav ul li a{
+    color: white;
+}
+
+/* Styling for the second banner */
+#banner_2 {
+    height: 80px;
+    background-color: #C4A484;
+}
+
+img{
+    max-width: 200px;
+    max-height: 200px;
 }
