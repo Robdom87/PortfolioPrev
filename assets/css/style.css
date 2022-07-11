@@ -30,10 +30,38 @@ header nav ul li a{
     color: white;
 }
 
-/* Styling for the second banner */
+/* Styling for the second banner. */
 #banner_2 {
     height: 80px;
     background-color: #C4A484;
+}
+
+/* Styling for biography. */
+.bio{
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    float: left; 
+    width: 100vw; 
+}
+
+@media screen and (max-width: 576px;){ 
+    
+}
+
+/* Styling for projects. */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.figures {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 img{
