@@ -1,3 +1,7 @@
+.body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 /* Styling for the first banner with navigation links. */
 header{
@@ -25,6 +29,7 @@ header nav ul li{
     display: inline-block;
     margin: 5px;
     color: white;
+    position: relative;
 }
 
 header nav ul li a{
@@ -35,45 +40,50 @@ header nav ul li a{
 #banner_2 {
     height: 80px;
     background-color: #C4A484;
-}
-
-.body {
-    margin-left: 5%;
-    margin-right: 5%;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;    
 }
 
 /* Styling for biography. */
-.bio{
-    display: flex;
-    align-items: center;
+#bio{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
     margin: 10px;
 }
 
-.left{
-    float: left; 
-    width: 100vw; 
-}
-
-@media screen and (max-width: 576px;){ 
-    
+#bio h2 {
+    border-right: solid navy 3px;
+    margin-right: 10px;
+    padding-right: 10px;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
 }
 
 /* Styling for projects. */
 #projects {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
     margin: 10px;
 }
 
 .section_title {
-    width: 25%;
+    border-right: solid navy 3px;
+    margin-right: 10px;
+    padding-right: 10px;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
 }
 
 .figures {
-    width: 75%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: 50% 50%; 
+    display: grid;
 }
 
 figure {
@@ -81,25 +91,68 @@ figure {
 }
 
 .bigger {
-    /* width: 75%; */
-    justify-content: center;
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
 }
 
 img{
-    width: 30vw;
-    height: auto;
-  
+   width: 95%;
 }
 
 .bigger img {
-    /* flex: 1 1 400px; */
-    /* used to resize proportionally */
-    width:60vw;
-    /* height:auto; */
-    /* max-width: 75%;
-    min-height: 200px;
-    min-width: 200px; */
+    width: 80%;
 }
 
 /* Styling for footer with contact info */
+footer{
+    background-color: navy;
+    border: 5px solid navy;
+    padding: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer img {
+    max-width: 75px;
+    max-height: 75px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+footer h2{
+    font-size: 24px; 
+    font-family: serif;
+    color: white;
+    justify-content: left;
+}
+
+footer ul{
+    display: flex;
+    font-size: 16px;
+    font-family: serif;
+    color:white;
+    justify-content: right;
+}
+
+footer ul li{
+    display: flex;
+    margin: 5px;
+    color: white;
+    justify-content: flex-end;
+}
+
+footer ul li a{
+    color: white;
+}
+
+/* fix the sizing of the images, make sure all the same */
+/* add media quereies for responsiveness */
+/* lots of more general formatting */
+
+@media screen and (max-width: 576px;){ 
+    
+}
 
