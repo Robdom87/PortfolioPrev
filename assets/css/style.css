@@ -1,3 +1,11 @@
+:root {
+    --pColor: #333333;
+    --sColor: #78c0a9;
+    --hFont: 'Courier New', Courier, monospace;
+    --tFont: sans-serif;
+    
+}
+
 .body {
     margin-left: 5%;
     margin-right: 5%;
@@ -5,8 +13,8 @@
 
 /* Styling for the first banner with navigation links. */
 header{
-    background-color: navy;
-    border: 5px solid navy;
+    background-color: var(--pColor);
+    border: 5px solid var(--pColor);
     padding: 25px;
     display: flex;
 }
@@ -15,8 +23,8 @@ header{
     display: flex;
     justify-content: left;
     font-size: 24px; 
-    font-family: serif;
-    color: white;
+    font-family: var(--tFont);
+    color: var(--sColor);
     width: 50%;
 }
 
@@ -38,8 +46,8 @@ header nav{
     display: flex;
     justify-content: right;
     font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
-    color:white;
+    font-family: var(--hFont);
+    color:var(--sColor);
     width: 50%;
     align-items: center;
     
@@ -52,24 +60,27 @@ header nav ul {
 }
 header nav ul li{
     margin: 5px;
-    color: white;
+    color: var(--sColor);
     position: relative;
     align-items: center;
     display: flex;
     margin-right: 15px;
+    text-decoration: underline;
+    text-decoration-color: var(--sColor);
 }
 
 header nav ul li a{
-    color: white;
+    color: var(--sColor);
 }
 
 /* Styling for the second banner. */
 #banner_2 {
     height: 80px;
-    background-color: #C4A484;
-    color: white;
+    background-color: var(--sColor);
+    color: var(--pColor);
     display: flex;
     width: 100%;
+    font-family: var(--tFont);
     justify-content: center;
     align-items: center;    
 }
@@ -83,12 +94,20 @@ header nav ul li a{
 }
 
 #bio h2 {
-    border-right: solid navy 3px;
+    border-right: solid var(--sColor) 3px;
     margin-right: 10px;
     padding-right: 10px;
     text-align: right;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--hFont);
     font-size: 24px;
+    color: var(--pColor)
+}
+
+#bio p{
+    margin-bottom: 20px;
+    font-family: var(--tFont);
+    color: var(--pColor)
+
 }
 
 /* Styling for projects. */
@@ -100,30 +119,51 @@ header nav ul li a{
 }
 
 .section_title {
-    border-right: solid navy 3px;
+    border-right: solid var(--sColor) 3px;
     margin-right: 10px;
     padding-right: 10px;
     text-align: right;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--hFont);
     font-size: 24px;
 }
 
 .figures {
     grid-template-columns: 50% 50%; 
     display: grid;
+    margin-bottom: 20px;
 }
 
 figure {
     min-width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display:block;
 }
+
+figure figcaption {
+    font-family: var(--tFont);
+    color: var(--pColor);
+    background-color: var(--sColor);
+    border: 5px solid var(--sColor);
+    padding: 3px;
+    display: block;
+    position: absolute;
+    }
+
+figure figcaption p{
+    font-family: var(--tFont);
+    font-size: 10px; 
+}
+
 
 .bigger {
     grid-column: auto / span 2;
     grid-row: auto / span 2;
 }
 
-img{
+figure img{
    width: 95%;
+   border:var(--sColor) solid 5px;
 }
 
 .bigger img {
@@ -139,19 +179,28 @@ img{
 }
 
 #contact_info h2{
-    border-right: solid navy 3px;
+    border-right: solid var(--sColor) 3px;
     margin-right: 10px;
     padding-right: 10px;
     text-align: right;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--hFont);
     font-size: 24px;
 }
 
 #contact_info ul{
     display: flex;
     font-size: 16px;
-    font-family: serif;
+    font-family: var(--tFont);
     justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#contact_info ul li{
+    font-family: var(--tFont);
+    color: var(--pColor);
+    text-decoration: underline;
+    text-decoration-color: var(--sColor);
+    
 }
 
 /* fix the sizing of the images, make sure all the same */
