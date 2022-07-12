@@ -1,3 +1,4 @@
+
 /* Styling for the first banner with navigation links. */
 header{
     background-color: navy;
@@ -36,10 +37,16 @@ header nav ul li a{
     background-color: #C4A484;
 }
 
+.body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 /* Styling for biography. */
 .bio{
     display: flex;
     align-items: center;
+    margin: 10px;
 }
 
 .left{
@@ -54,17 +61,45 @@ header nav ul li a{
 /* Styling for projects. */
 #projects {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px;
+}
 
+.section_title {
+    width: 25%;
 }
 
 .figures {
-    float: left;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure {
+    min-width: 50%;
+}
+
+.bigger {
+    /* width: 75%; */
+    justify-content: center;
 }
 
 img{
-    max-width: 200px;
-    max-height: 200px;
+    width: 30vw;
+    height: auto;
+  
 }
+
+.bigger img {
+    /* flex: 1 1 400px; */
+    /* used to resize proportionally */
+    width:60vw;
+    /* height:auto; */
+    /* max-width: 75%;
+    min-height: 200px;
+    min-width: 200px; */
+}
+
+/* Styling for footer with contact info */
+
