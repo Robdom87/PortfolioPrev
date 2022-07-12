@@ -8,28 +8,55 @@ header{
     background-color: navy;
     border: 5px solid navy;
     padding: 25px;
+    display: flex;
 }
 
-header h1{
-    display: inline-block;
+.name {
+    display: flex;
+    justify-content: left;
     font-size: 24px; 
     font-family: serif;
     color: white;
+    width: 50%;
+}
+
+.name h1 {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-width: 75px;
+    max-height: 75px;
+    border-radius: 50px;
+    display: flex;
+    margin-left: 20px;
+    
 }
 
 header nav{
-    display: inline-block;
-    float: right;
+    display: flex;
+    justify-content: right;
     font-size: 16px;
-    font-family: serif;
+    font-family: 'Courier New', Courier, monospace;
     color:white;
+    width: 50%;
+    align-items: center;
+    
 }
 
+header nav ul {
+    display: flex;
+    justify-content: right;
+
+}
 header nav ul li{
-    display: inline-block;
     margin: 5px;
     color: white;
     position: relative;
+    align-items: center;
+    display: flex;
+    margin-right: 15px;
 }
 
 header nav ul li a{
@@ -104,48 +131,27 @@ img{
 }
 
 /* Styling for footer with contact info */
-footer{
-    background-color: navy;
-    border: 5px solid navy;
-    padding: 25px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+#contact_info {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    margin: 10px;
 }
 
-footer img {
-    max-width: 75px;
-    max-height: 75px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
+#contact_info h2{
+    border-right: solid navy 3px;
+    margin-right: 10px;
+    padding-right: 10px;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
 }
 
-
-footer h2{
-    font-size: 24px; 
-    font-family: serif;
-    color: white;
-    justify-content: left;
-}
-
-footer ul{
+#contact_info ul{
     display: flex;
     font-size: 16px;
     font-family: serif;
-    color:white;
-    justify-content: right;
-}
-
-footer ul li{
-    display: flex;
-    margin: 5px;
-    color: white;
-    justify-content: flex-end;
-}
-
-footer ul li a{
-    color: white;
+    justify-content: space-around;
 }
 
 /* fix the sizing of the images, make sure all the same */
