@@ -2,55 +2,53 @@
     --pColor: #333333;
     --sColor: #78c0a9;
     --hFont: 'Courier New', Courier, monospace;
-    --tFont: sans-serif;   
+    --tFont: sans-serif;
 }
 
-.body {
+main {
     margin-left: 5%;
     margin-right: 5%;
 }
 
 /* Styling for the first banner with navigation links. */
-header{
+header {
     background-color: var(--pColor);
     border: 5px solid var(--pColor);
     padding: 25px;
     display: flex;
 }
 
-.name {
+header section {
     display: flex;
     justify-content: left;
-    font-size: 24px; 
+    font-size: 24px;
     font-family: var(--tFont);
     color: var(--sColor);
     width: 50%;
 }
 
-.name h1 {
+header section h1 {
     display: flex;
     align-items: center;
 }
 
-header img {
+header section img {
     max-width: 75px;
     max-height: 75px;
     border-radius: 50px;
     display: flex;
     margin-right: 20px;
     filter: grayscale(100%);
-    
 }
 
-header nav{
+header nav {
     display: flex;
     justify-content: right;
     font-size: 16px;
     font-family: var(--hFont);
-    color:var(--sColor);
+    color: var(--sColor);
     width: 50%;
     align-items: center;
-    
 }
 
 header nav ul {
@@ -58,7 +56,8 @@ header nav ul {
     justify-content: right;
 
 }
-header nav ul li{
+
+header nav ul li {
     margin: 5px;
     color: var(--sColor);
     position: relative;
@@ -69,16 +68,16 @@ header nav ul li{
     text-decoration-color: var(--sColor);
 }
 
-header nav ul li:hover{
+header nav ul li:hover {
     filter: opacity(70%)
 }
 
-header nav ul li a{
+header nav ul li a {
     color: var(--sColor);
 }
 
 /* Styling for the second banner. */
-#banner_2 {
+.banner_2 {
     height: 80px;
     background-color: var(--sColor);
     color: var(--pColor);
@@ -86,53 +85,39 @@ header nav ul li a{
     width: 100%;
     font-family: var(--tFont);
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+}
+
+/* Fomatting for all body class header sections. Created the outline of all figures sections within body. */
+
+.body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    margin: 10px;
+}
+
+.body h2 {
+    border-right: solid var(--sColor) 3px;
+    margin-right: 10px;
+    padding-right: 10px;
+    text-align: right;
+    font-family: var(--hFont);
+    font-size: 24px;
+    color: var(--pColor)
 }
 
 /* Styling for biography. */
-#bio{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 100%;
-    margin: 10px;
-}
-
-#bio h2 {
-    border-right: solid var(--sColor) 3px;
-    margin-right: 10px;
-    padding-right: 10px;
-    text-align: right;
-    font-family: var(--hFont);
-    font-size: 24px;
-    color: var(--pColor)
-}
-
-#bio p{
+#bio p {
     margin-bottom: 20px;
     font-family: var(--tFont);
     color: var(--pColor)
-
 }
 
-/* Styling for projects. */
-#projects {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 100%;
-    margin: 10px;
-}
-
-.section_title {
-    border-right: solid var(--sColor) 3px;
-    margin-right: 10px;
-    padding-right: 10px;
-    text-align: right;
-    font-family: var(--hFont);
-    font-size: 24px;
-}
-
-.figures {
-    grid-template-columns: 50% 50%; 
+/* Styling for projects section figures. Limited each figures space to only half the alotted space.
+ Positioned figcaption within the image.*/
+.fig_sect {
+    grid-template-columns: 50% 50%;
     display: grid;
     margin-bottom: 20px;
 }
@@ -141,7 +126,7 @@ figure {
     min-width: 50%;
     margin-top: 5px;
     margin-bottom: 5px;
-    display:block;
+    display: block;
 }
 
 figure figcaption {
@@ -152,54 +137,39 @@ figure figcaption {
     padding: 3px;
     display: block;
     position: absolute;
-    }
-
-figure figcaption p{
-    font-family: var(--tFont);
-    font-size: 10px; 
 }
 
+figure figcaption p {
+    font-family: var(--tFont);
+    font-size: 10px;
+}
 
+figure img {
+    width: 95%;
+    border: var(--sColor) solid 5px;
+}
+
+#projects img:hover {
+    filter: opacity(70%)
+}
+
+/* Styling for bigger container in projects section. Increased the cell size for the container. */
 .bigger {
     grid-column: auto / span 2;
     grid-row: auto / span 2;
-}
-
-figure img{
-   width: 95%;
-   border:var(--sColor) solid 5px;
 }
 
 .bigger img {
     width: 97.5%;
 }
 
-#projects img:hover{
-    filter: opacity(70%)
-}
-
 .bigger figure {
     text-align: center;
 }
 
-/* Styling for footer with contact info */
-#contact {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 100%;
-    margin: 10px;
-}
 
-#contact h2{
-    border-right: solid var(--sColor) 3px;
-    margin-right: 10px;
-    padding-right: 10px;
-    text-align: right;
-    font-family: var(--hFont);
-    font-size: 24px;
-}
-
-#contact ul{
+/* Styling for contact info. */
+#contact ul {
     display: flex;
     font-size: 16px;
     font-family: var(--tFont);
@@ -207,70 +177,42 @@ figure img{
     margin-bottom: 20px;
 }
 
-#contact ul li{
+#contact ul li {
     font-family: var(--tFont);
     color: var(--pColor);
     text-decoration: underline;
     text-decoration-color: var(--sColor);
-    
 }
 
-#contact ul li a:hover{
+#contact ul li a:hover {
     filter: opacity(70%)
 }
-  
-  /* Large smartphones */
-  @media screen and (max-width: 768px) {
-   /* start wrapping text and center */
-   header {
+
+/* Media queries for smaller screens. Tablets displayed the site well so no adjustments required. */
+@media screen and (max-width: 768px) {
+
+    /* Makes header into two rows. */
+    header {
         flex-direction: column;
     }
-    .name {
+
+    header section {
         width: 100%;
-        justify-content: center;   
+        justify-content: center;
     }
+
     header nav {
         width: 100%;
         justify-content: center;
     }
 
-   /* header over the section rather than to the side */
-   #bio{
-    display: block;
-    margin: 10px;
-    }
-
-    #bio h2 {
-        border-right: solid var(--sColor) 0px;
-        margin-right: 0px;
-        padding-right: 0px;
-        text-align: left;
-        border-bottom: solid var(--sColor) 3px;
-        margin-bottom: 10px;
-        padding-bottom: 10px; 
-    }
-
-    #projects {
+    /* Section title above rather than besides. */
+    .body {
         display: block;
         margin: 10px;
     }
-    
-    .section_title {
-        border-right: solid var(--sColor) 0px;
-        margin-right: 0px;
-        padding-right: 0px;
-        text-align: left;
-        border-bottom: solid var(--sColor) 3px;
-        margin-bottom: 10px;
-        padding-bottom: 10px;   
-    }
 
-    #contact {
-        display: block;
-        margin: 10px;
-    }
-    
-    #contact h2{
+    .body h2 {
         border-right: solid var(--sColor) 0px;
         margin-right: 0px;
         padding-right: 0px;
@@ -278,13 +220,12 @@ figure img{
         border-bottom: solid var(--sColor) 3px;
         margin-bottom: 10px;
         padding-bottom: 10px;
-        
     }
-  }
-  
-  /* Small smartphones */
-  @media screen and (max-width: 576px) {
-    /* make all project boxes the same size */
+}
+
+@media screen and (max-width: 576px) {
+
+    /* Makes all project boxes the same size. */
     .figures {
         display: block;
     }
@@ -292,7 +233,8 @@ figure img{
     .bigger img {
         width: 95%;
     }
-    /* make contact info and nav a column */
+
+    /* Makes contact info and links into a column. */
     #contact ul {
         flex-direction: column;
         justify-content: center;
@@ -302,4 +244,4 @@ figure img{
         justify-content: center;
         display: flex;
         margin: 3px;
-  }
+    }
