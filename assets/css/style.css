@@ -2,8 +2,7 @@
     --pColor: #333333;
     --sColor: #78c0a9;
     --hFont: 'Courier New', Courier, monospace;
-    --tFont: sans-serif;
-    
+    --tFont: sans-serif;   
 }
 
 .body {
@@ -167,18 +166,22 @@ figure img{
 }
 
 .bigger img {
-    width: 80%;
+    width: 97.5%;
+}
+
+.bigger figure {
+    text-align: center;
 }
 
 /* Styling for footer with contact info */
-#contact_info {
+#contact {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 100%;
     margin: 10px;
 }
 
-#contact_info h2{
+#contact h2{
     border-right: solid var(--sColor) 3px;
     margin-right: 10px;
     padding-right: 10px;
@@ -187,7 +190,7 @@ figure img{
     font-size: 24px;
 }
 
-#contact_info ul{
+#contact ul{
     display: flex;
     font-size: 16px;
     font-family: var(--tFont);
@@ -195,19 +198,97 @@ figure img{
     margin-bottom: 20px;
 }
 
-#contact_info ul li{
+#contact ul li{
     font-family: var(--tFont);
     color: var(--pColor);
     text-decoration: underline;
     text-decoration-color: var(--sColor);
     
 }
+  
+  /* Large smartphones */
+  @media screen and (max-width: 768px) {
+   /* start wrapping text and center */
+   header {
+        flex-direction: column;
+    }
+    .name {
+        width: 100%;
+        justify-content: center;   
+    }
+    header nav {
+        width: 100%;
+        justify-content: center;
+    }
 
-/* fix the sizing of the images, make sure all the same */
-/* add media quereies for responsiveness */
-/* lots of more general formatting */
+   /* header over the section rather than to the side */
+   #bio{
+    display: block;
+    margin: 10px;
+    }
 
-@media screen and (max-width: 576px;){ 
+    #bio h2 {
+        border-right: solid var(--sColor) 0px;
+        margin-right: 0px;
+        padding-right: 0px;
+        text-align: left;
+        border-bottom: solid var(--sColor) 3px;
+        margin-bottom: 10px;
+        padding-bottom: 10px; 
+    }
+
+    #projects {
+        display: block;
+        margin: 10px;
+    }
     
-}
+    .section_title {
+        border-right: solid var(--sColor) 0px;
+        margin-right: 0px;
+        padding-right: 0px;
+        text-align: left;
+        border-bottom: solid var(--sColor) 3px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;   
+    }
 
+    #contact {
+        display: block;
+        margin: 10px;
+    }
+    
+    #contact h2{
+        border-right: solid var(--sColor) 0px;
+        margin-right: 0px;
+        padding-right: 0px;
+        text-align: left;
+        border-bottom: solid var(--sColor) 3px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        
+    }
+  }
+  
+  /* Small smartphones */
+  @media screen and (max-width: 576px) {
+    /* make all project boxes the same size */
+    .figures {
+        display: block;
+    }
+    
+    .bigger img {
+        width: 95%;
+    }
+    /* make contact info and nav a column */
+    #contact ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contact ul li {
+        justify-content: center;
+        display: flex;
+        margin: 3px;
+  }
+
+  
