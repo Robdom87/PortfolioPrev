@@ -37,7 +37,8 @@ header img {
     max-height: 75px;
     border-radius: 50px;
     display: flex;
-    margin-left: 20px;
+    margin-right: 20px;
+    filter: grayscale(100%);
     
 }
 
@@ -66,6 +67,10 @@ header nav ul li{
     margin-right: 15px;
     text-decoration: underline;
     text-decoration-color: var(--sColor);
+}
+
+header nav ul li:hover{
+    filter: opacity(70%)
 }
 
 header nav ul li a{
@@ -169,6 +174,10 @@ figure img{
     width: 97.5%;
 }
 
+#projects img:hover{
+    filter: opacity(70%)
+}
+
 .bigger figure {
     text-align: center;
 }
@@ -204,6 +213,10 @@ figure img{
     text-decoration: underline;
     text-decoration-color: var(--sColor);
     
+}
+
+#contact ul li a:hover{
+    filter: opacity(70%)
 }
   
   /* Large smartphones */
@@ -275,7 +288,7 @@ figure img{
     .figures {
         display: block;
     }
-    
+
     .bigger img {
         width: 95%;
     }
