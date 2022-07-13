@@ -226,7 +226,7 @@ figure img {
 @media screen and (max-width: 576px) {
 
     /* Makes all project boxes the same size. */
-    .figures {
+    .fig_sect {
         display: block;
     }
 
