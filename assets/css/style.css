@@ -160,10 +160,11 @@ figure img {
 }
 
 .bigger img {
-    width: 97.5%;
+    width: 55.5%;
 }
 
 .bigger figure {
+    justify-content: center;
     text-align: center;
 }
 
