@@ -1,23 +1,15 @@
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { MdMail } from "react-icons/md";
+
 function Contact() {
     return (
-        <section id="contact" class="body">
-            <h2>Contact</h2>
-            <ul class="info">
-                <li>
-                    <p>619-576-1307</p>
-                </li>
-                <li>
-                    <p> dominguezr.marq@gmail.com</p>
-                </li>
-                <li>
-                    <a href="https://github.com/Robdom87">Github</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/robert-dominguez-marq/">Linkedin</a>
-                </li>
-            </ul>
+        <section className="contact">
+            <a href="mailto:dominguezr.marq@gmail.com"><MdMail /></a>
+            <a href="https://github.com/Robdom87"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/robert-dominguez-marq/"><FaLinkedin /></a>
         </section>
     );
-  }
+}
 
-  export default Contact;
+export default Contact;

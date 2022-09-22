@@ -1,0 +1,88 @@
+header {
+
+  }
+  
+  .profile {
+   
+  }
+  
+  h1 {
+   
+  }
+  
+  .profilePic {
+    filter: grayscale(55%);
+  }
+  
+  .contact {
+ 
+  }
+  
+  .contact a {
+    font-size: 16pt;
+  }
+  
+  aside {
+ 
+  }
+  
+  .aboutMe {
+    border-bottom: 2px lightgray solid;
+  }
+  
+  .aboutMe p {
+    
+  }
+  
+  .projects {
+    border-bottom: 2px lightgray solid;
+  }
+  
+  .projects h2 {
+
+  }
+  
+  .row {
+  }
+  
+  footer {
+   
+  }
+  
+  footer * {
+    font-size: 16pt;
+  }
+  
+  /* Media queries for smaller screens. Tablets displayed the site well so no adjustments required. */
+  @media screen and (max-width: 768px) {
+    header {
+  
+    }
+    .profile {
+     
+    }
+    
+    h1 {
+      
+    }
+    
+    .profilePic {
+   
+    }
+    
+    .contact {
+    
+    }
+    aside {
+      
+    }
+    .aboutMe {
+      
+    }
+  
+    .aboutMe p {
+     
+    }
+  }
+  
+  

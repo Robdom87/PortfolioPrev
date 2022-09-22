@@ -1,28 +1,20 @@
+import avatar from '../images/avatar.jpg'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Image from 'react-bootstrap/Image'
+import Contact from './contact';
+
+
 function Header() {
     return (
         <header>
-        <section>
-            <img src="./assets/avatar.jpg" alt="Headshot of person."/>      
-            <h1>Robert Dominguez</h1>
-        </section>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#bio">Bio</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li>
-                    <a href="./assets/Resume.pdf" download="resume" target="_blank">Resume</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            <section className='profile'>
+                <Image className='profilePic' roundedCircle src={avatar} alt="Headshot of person." />
+                <h1><strong>Hi, I am Robert Dominguez,</strong><br />an aspiring software engineer.
+                    <br />This is my site.</h1>
+            </section>
+            <Contact />
+        </header>
     );
-  }
+}
 
-  export default Header;
+export default Header;

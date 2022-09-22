@@ -1,14 +1,48 @@
-import Project from './project.js'
+import React from 'react';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Card from 'react-bootstrap/Card';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import projectList from './projectList';
 
-function ProjectCont() {
-    return (
-        <section id="projects" class="body">
-        <h2>Projects</h2>
-        <section class="fig_sect">
-           <Project/>
-        </section>
-    </section>
-    );
-  }
+class ProjectCont extends React.Component {
+    printProject(projectList, i) {
+        return (
+            <Col xs={12} md={6}>
+                <Card>
+                    <a href={projectList[i].href} target="_blank">
+                        <Card.Img variant="top" src={projectList[i].src} alt={projectList[i].alt} />
+                    </a>
+                    <Card.Body>
+                        <Card.Title>{projectList[i].title}</Card.Title>
+                        <Card.Text>
+                            {projectList[i].tech}
+                            <br />
+                            {projectList[i].description}
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+            </Col>
+        );
+    }
 
-  export default ProjectCont;
+    render() {
+        return (
+            <section className='projects'>
+                <h2>
+                    Recent Work
+                </h2>
+                <Row>
+                    {this.printProject(projectList, 0)}
+                    {this.printProject(projectList, 1)}
+                    {this.printProject(projectList, 2)}
+                    {this.printProject(projectList, 3)}
+                </Row>
+            </section>
+
+        );
+    }
+}
+
+
+export default ProjectCont;

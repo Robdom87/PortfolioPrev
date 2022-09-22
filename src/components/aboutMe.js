@@ -1,22 +1,19 @@
+import Button from 'react-bootstrap/Button';
+
+
 function AboutMe() {
     return (
-        <section id="bio" class="body">
-        <h2>Bio</h2>
-        <p>I am a sophomore at the University of California, Los Angeles pursuing a bachelor’s degree
-            in
-            Business Economics with a minor in Accounting. I always adored the beautiful logic of numbers and my
-            first
-            accounting class here in UCLA really pushed my idealized interest in accounting into full fruition. I
-            can
-            recall very vividly the immense sense of satisfaction as my first 5-hour long problem set came to an end
-            with a simple balancing of the credits and debits. Since then extensive involvement with Student
-            Accounting
-            Society and VITA, introduced me to professionals and aspiring accountants who helped me better
-            understand
-            the amazing opportunities available to me in the field.
-        </p>
-    </section>
+        <section className="aboutMe">
+            <h2>"If it illicits fear, it must be done." - Anonymous</h2>
+            <p>
+                Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate
+                lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing
+                id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna.
+                Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+            </p>
+            <Button variant="outline-secondary">Download Resume</Button>
+        </section>
     );
-  }
+}
 
-  export default AboutMe;
+export default AboutMe;

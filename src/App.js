@@ -1,18 +1,20 @@
 import Header from './components/header';
-import Banner from './components/banner';
 import AboutMe from './components/aboutMe';
 import ProjectCont from './components/projectCont';
-import Contact from './components/contact';
-import './App.css';
+import Footer from './components/footer';
+
+import './CSS/App.css';
+import './CSS/style.css';
 
 function App() {
   return (
     <main>
       <Header />
-      <Banner />
-      <AboutMe/>
-      <ProjectCont/>
-      <Contact/>
+      <aside>
+        <AboutMe />   
+        <ProjectCont />
+        <Footer/>
+      </aside>
     </main>
   );
 }

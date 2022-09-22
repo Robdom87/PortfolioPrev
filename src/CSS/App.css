@@ -1,0 +1,115 @@
+header {
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  padding-right: 40px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 60px;
+}
+
+h1 {
+  padding-top: 30px;
+  text-align: end;
+  line-height: 1.5;
+}
+
+.profilePic {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.contact {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact a {
+  padding-left: 10px;
+}
+
+aside {
+  width: 70%;
+  position: absolute;
+  right: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.aboutMe {
+  padding-top: 75px;
+  padding-bottom: 40px;
+}
+
+.aboutMe p {
+  margin-top: 40px;
+}
+
+.projects {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.projects h2 {
+  margin-bottom: 20px;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+footer * {
+  font-size: 16pt;
+}
+
+/* Media queries for smaller screens. Tablets displayed the site well so no adjustments required. */
+@media screen and (max-width: 768px) {
+  header {
+    width:100%;
+    height: auto;
+    position:inherit;
+    padding-left: 40px;
+  }
+  .profile {
+    align-items: center;
+    padding-top: 60px;
+  }
+  
+  h1 {
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .profilePic {
+    max-width: 100px;
+    max-height: 100px;
+    filter: grayscale(55%);
+  }
+  
+  .contact {
+    justify-content: center;
+  }
+  aside {
+    width: 100%;
+    position:inherit;
+  }
+  .aboutMe {
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .aboutMe p {
+    text-align: left;
+  }
+ 
+}
+
