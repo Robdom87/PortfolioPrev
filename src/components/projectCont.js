@@ -18,7 +18,10 @@ class ProjectCont extends React.Component {
                         <Card.Text>
                             {projectList[i].tech}
                             <br />
+                            <span className='card-subtext'>
                             {projectList[i].description}
+                            </span>
+                            
                         </Card.Text>
                     </Card.Body>
                 </Card>
@@ -35,8 +38,6 @@ class ProjectCont extends React.Component {
                 <Row>
                     {this.printProject(projectList, 0)}
                     {this.printProject(projectList, 1)}
-                    {this.printProject(projectList, 2)}
-                    {this.printProject(projectList, 3)}
                 </Row>
             </section>
 

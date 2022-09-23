@@ -1,8 +1,13 @@
+:root {
+  --Vspacing: 40px;
+  --Hspacing: 40px;
+}
+
 header {
   width: 30%;
   height: 100%;
   position: fixed;
-  padding-right: 40px;
+  padding-right: var(--Hspacing);
 }
 
 .profile {
@@ -36,26 +41,33 @@ aside {
   width: 70%;
   position: absolute;
   right: 0px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: var(--Hspacing);
+  padding-right: var(--Hspacing);
 }
 
 .aboutMe {
   padding-top: 75px;
-  padding-bottom: 40px;
+  padding-bottom: var(--Vspacing);
 }
 
 .aboutMe p {
-  margin-top: 40px;
+  margin-top: var(--Vspacing);
 }
 
 .projects {
-  margin-top: 40px;
-  padding-bottom: 40px;
+  margin-top: var(--Vspacing);
+  padding-bottom: var(--Vspacing);
 }
 
 .projects h2 {
   margin-bottom: 20px;
+}
+
+.card {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  border: 0px;
 }
 
 .row {
@@ -63,7 +75,7 @@ aside {
 }
 
 footer {
-  margin-top: 40px;
+  margin-top: var(--Vspacing);
   text-align: center;
 }
 
@@ -77,7 +89,8 @@ footer * {
     width:100%;
     height: auto;
     position:inherit;
-    padding-left: 40px;
+    padding-left: var(--Hspacing);
+    padding-bottom: var(--Vspacing);
   }
   .profile {
     align-items: center;
@@ -103,7 +116,7 @@ footer * {
     position:inherit;
   }
   .aboutMe {
-    padding-top: 40px;
+    padding-top: var(--Vspacing);
     text-align: center;
   }
 

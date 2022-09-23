@@ -2,7 +2,6 @@ import Header from './components/header';
 import AboutMe from './components/aboutMe';
 import ProjectCont from './components/projectCont';
 import Footer from './components/footer';
-
 import './CSS/App.css';
 import './CSS/style.css';
 
