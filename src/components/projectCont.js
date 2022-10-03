@@ -38,6 +38,7 @@ class ProjectCont extends React.Component {
                 <Row>
                     {this.printProject(projectList, 0)}
                     {this.printProject(projectList, 1)}
+                    {this.printProject(projectList, 2)}
                 </Row>
             </section>
 

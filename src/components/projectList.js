@@ -1,5 +1,6 @@
 import fitCal from '../images/fitCal.jpeg'
 import portfolio from '../images/portfolio.png'
+import employee_db_cms from '../images/employee_db_cms.png'
 
 let projectList = [
     {
@@ -17,6 +18,14 @@ let projectList = [
         title: "Portfolio",
         tech: "REACT, CSS",
         description: "Inception."
+    },
+    {
+        href: "https://github.com/Robdom87/employee_db_cms",
+        src: employee_db_cms,
+        alt: "Image of code in a terminal.",
+        title: "employee_db_cms",
+        tech: "Javascript, MySQL",
+        description: "employee_db_cms is a content management system that provides simplified options to view, create, update, delete,and interact with your own employee database via the terminal."
     }
 ];
 
