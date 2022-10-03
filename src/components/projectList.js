@@ -1,6 +1,7 @@
 import fitCal from '../images/fitCal.jpeg'
 import portfolio from '../images/portfolio.png'
 import employee_db_cms from '../images/employee_db_cms.png'
+import ecommerce from '../images/ecommerce.png'
 
 let projectList = [
     {
@@ -26,6 +27,14 @@ let projectList = [
         title: "employee_db_cms",
         tech: "Javascript, MySQL",
         description: "employee_db_cms is a content management system that provides simplified options to view, create, update, delete,and interact with your own employee database via the terminal."
+    },
+    {
+        href: "https://github.com/Robdom87/e-commerce_routing",
+        src: ecommerce,
+        alt: "Insomnia page containing e-commerce routes.",
+        title: "e-commerce_routing",
+        tech: "Javascript, API routes",
+        description: "Routing to create, read, update, and delete data within your database on MySQL via URL requests."
     }
 ];
 
