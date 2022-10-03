@@ -2,7 +2,7 @@ Portfolio
 
 ## Description
 
-Welcome to my portfolio! It exists to exposee my work and provide more info on myself. 
+Welcome to my portfolio! It exists as an exhibition of my work and to provide more info on myself. 
 
 ## Deployed Link
 
