@@ -44,7 +44,7 @@ let projectList = [
         alt: "Quick Jot This Down interface.",
         title: "quick-jot-this-down",
         tech: "Javascript, Express",
-        description: "Simple note taking application with data persistance."
+        description: "Simple note taking application with data persistence."
     },
     {
         href: "https://fcv2.herokuapp.com/",
