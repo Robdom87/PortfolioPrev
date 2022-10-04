@@ -1,6 +1,6 @@
 import fitCal from '../images/fitCal.jpeg'
 import portfolio from '../images/portfolio.png'
-import employee_db_cms from '../images/employee_db_cms.png'
+import employee_db_cms from '../images/employee_db.png'
 import ecommerce from '../images/ecommerce.png'
 import qjtd from '../images/qjtd.png'
 import fcv2 from '../images/fitCalv2.png'
