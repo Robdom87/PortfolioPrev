@@ -2,6 +2,8 @@ import fitCal from '../images/fitCal.jpeg'
 import portfolio from '../images/portfolio.png'
 import employee_db_cms from '../images/employee_db_cms.png'
 import ecommerce from '../images/ecommerce.png'
+import qjtd from '../images/qjtd.png'
+import fcv2 from '../images/fitCalv2.png'
 
 let projectList = [
     {
@@ -35,6 +37,22 @@ let projectList = [
         title: "e-commerce_routing",
         tech: "Javascript, API routes",
         description: "Routing to create, read, update, and delete data within your database on MySQL via URL requests."
+    },
+    {
+        href: "https://qjtd.herokuapp.com/",
+        src: qjtd,
+        alt: "Quick Jot This Down interface.",
+        title: "quick-jot-this-down",
+        tech: "Javascript, Express",
+        description: "Simple note taking application with data persistance."
+    },
+    {
+        href: "https://fcv2.herokuapp.com/",
+        src: fcv2,
+        alt: "logo of fitcal v2",
+        title: "FitCal v2",
+        tech: "Javascript, MySQL, Express",
+        description: "***In Development*** Continuation of FitCal with new features and a database."
     }
 ];
 
