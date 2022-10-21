@@ -41,7 +41,6 @@ class ProjectCont extends React.Component {
                     {this.printProject(projectList, 2)}
                     {this.printProject(projectList, 3)}
                     {this.printProject(projectList, 4)}
-                    {this.printProject(projectList, 5)}
                 </Row>
             </section>
 
