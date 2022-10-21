@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6d784932.css",
-    "main.js": "/static/js/main.5f075a13.js",
+    "main.js": "/static/js/main.87cab08d.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/portfolio.png": "/static/media/portfolio.6e0993554cf1c56b2746.png",
     "static/media/fitCalv2.png": "/static/media/fitCalv2.6fea41b028be8d5a615f.png",
@@ -13,11 +13,11 @@
     "static/media/avatar.jpg": "/static/media/avatar.b5faf7ee032436621fe3.jpg",
     "index.html": "/index.html",
     "main.6d784932.css.map": "/static/css/main.6d784932.css.map",
-    "main.5f075a13.js.map": "/static/js/main.5f075a13.js.map",
+    "main.87cab08d.js.map": "/static/js/main.87cab08d.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d784932.css",
-    "static/js/main.5f075a13.js"
+    "static/js/main.87cab08d.js"
   ]
 }
