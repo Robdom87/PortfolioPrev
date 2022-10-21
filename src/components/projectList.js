@@ -7,11 +7,11 @@ import fcv2 from '../images/fitCalv2.png'
 
 let projectList = [
     {
-        href: "https://robdom87.github.io/FitCal/",
+        href: "https://fitcalxxii.herokuapp.com/",
         src: fitCal,
         alt: "Website landing page titled FitCal.",
         title: "FitCal",
-        tech: "Javascript, HTML",
+        tech: "Handlebars, Node",
         description: "FitCal is a nutrition and exercise app with a simple and clean interface to assist user with daily logs of nutritional values, BMI index and exercise routine."
     },
     {
@@ -45,14 +45,6 @@ let projectList = [
         title: "quick-jot-this-down",
         tech: "Javascript, Express",
         description: "Simple note taking application with data persistence."
-    },
-    {
-        href: "https://fcv2.herokuapp.com/",
-        src: fcv2,
-        alt: "logo of fitcal v2",
-        title: "FitCal v2",
-        tech: "Javascript, MySQL, Express",
-        description: "***In Development*** Continuation of FitCal with new features and a database."
     }
 ];
 
