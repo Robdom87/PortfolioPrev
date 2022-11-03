@@ -3,7 +3,7 @@ import portfolio from '../images/portfolio.png'
 import employee_db_cms from '../images/employee_db.png'
 import ecommerce from '../images/ecommerce.png'
 import qjtd from '../images/qjtd.png'
-import fcv2 from '../images/fitCalv2.png'
+import ttt from '../images/ttt.png'
 
 let projectList = [
     {
@@ -12,7 +12,7 @@ let projectList = [
         alt: "Website landing page titled FitCal.",
         title: "FitCal",
         tech: "Handlebars, Node",
-        description: "FitCal is a nutrition and exercise app with a simple and clean interface to assist user with daily logs of nutritional values, BMI index and exercise routine."
+        description: "FitCal is an application to provide starting point for anyone looking to improve their consumption and health with exercise data tracking and data visualization."
     },
     {
         href: "https://robdom87.github.io/",
@@ -35,8 +35,16 @@ let projectList = [
         src: ecommerce,
         alt: "Insomnia page containing e-commerce routes.",
         title: "e-commerce_routing",
-        tech: "Javascript, API routes",
+        tech: "Sequelize, API routes",
         description: "Routing to create, read, update, and delete data within your database on MySQL via URL requests."
+    },
+    {
+        href: "http://the-talking-tech.herokuapp.com/",
+        src: ttt,
+        alt: "The Talking Tech Blog Dashboard",
+        title: "the-talking-tech",
+        tech: "Handlebars, Express",
+        description: "Blog to discuss all things tech with full posting and commenting functionalities for registered accounts."
     },
     {
         href: "https://qjtd.herokuapp.com/",
@@ -46,6 +54,7 @@ let projectList = [
         tech: "Javascript, Express",
         description: "Simple note taking application with data persistence."
     }
+
 ];
 
 export default projectList;
