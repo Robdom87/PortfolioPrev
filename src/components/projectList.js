@@ -4,6 +4,7 @@ import employee_db_cms from '../images/employee_db.png'
 import ecommerce from '../images/ecommerce.png'
 import qjtd from '../images/qjtd.png'
 import ttt from '../images/ttt.png'
+import gnc from '../images/gnc.png'
 
 let projectList = [
     {
@@ -53,6 +54,14 @@ let projectList = [
         title: "quick-jot-this-down",
         tech: "Javascript, Express",
         description: "Simple note taking application with data persistence."
+    },
+    {
+        href: "https://gasncharge.herokuapp.com/",
+        src: gnc,
+        alt: "GasNCharge Logo",
+        title: "GasNCharge",
+        tech: "React, GraphQL",
+        description: "Application to find gas stations and electric charging ports in their area."
     }
 
 ];
